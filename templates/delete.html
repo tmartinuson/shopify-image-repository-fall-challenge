@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopify Image Repository</title>
+</head>
+<body>
+<h2>Enter the number for the photo you would like to delete:</h2>
+
+<form action="http://127.0.0.1:5000/deleted" enctype="multipart/form-data" method="POST">
+    <input type="number" name="number"/>
+    <input type="submit" value="Delete"/>
+</form>
+
+   <div id="photo"></div>
+
+<script>
+    var x = "", i;
+    var list = JSON.parse('{{num}}')
+    for(i = 0; i < list.length; i++) {
+        x = x + "<h2>" + list[i] + ")</h2>" + "<td><img src='http://127.0.0.1:5000/" + list[i] + "' width='250'></td>";
+        document.getElementById("photo").innerHTML = x;
+    }
+</script>
+</body>
+</html>

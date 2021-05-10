@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopify Image Repository</title>
+</head>
+<body>
+   <h1>Welcome to my simple image repository Shopify :)!</h1>
+   <h2>Upload here:</h2>
+<form action="http://127.0.0.1:5000/upload" enctype="multipart/form-data" method="POST">
+    <input type="file" name="pic"/>
+    <input type="submit" value="Upload a picture"/>
+</form>
+   <h2>Delete here:</h2>
+   <form action="http://127.0.0.1:5000/delete">
+    <input type="submit" value="Go to delete page"/>
+</form>
+<h2>Photos in repo currently</h2>
+
+   <div id="photo"></div>
+
+<script>
+    var x = "", i;
+    var list = JSON.parse('{{pictures}}')
+    for(i = 0; i < list.length; i++) {
+        x = x + "<td><img src='http://127.0.0.1:5000/" + list[i] + "' width='250'></td>";
+        document.getElementById("photo").innerHTML = x;
+    }
+</script>
+
+    <div id="pics"></div>
+
+<script>
+    var x = "", i;
+    forEach()
+</script>
+
+</body>
+</html>
