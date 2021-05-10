@@ -31,10 +31,9 @@ This application has been tested manually for extreme values in cases of deletio
 The text box for the deletion page uses numerical entries only which prevents users from breaking the application with SQL Injection.
 The images are stored on a local database created on application run (or as there is already a given db with images stored) and therefore are only as secure as the user's computer
 running the application.
-The 'Choose File' button permits file types of different varieties and is a risk that needs to be patched.
 
 ## Implementations for the future
-First of all, the choose file allowing multiple types needs to be fixed. I would like to include a feature where the user can search for their images within the repository. I also
+First of all, I would like to include a feature where the user can search for their images within the repository. I also
 would like to include an ecommerce aspect of being able to purchase photos from a 'fake' bank account where you gain ownership of that photo and the image is then deleted from the
 repository (or by the stock of the image thats left). Finally I think I would want to clean up the UI so it looks nicer! 
 
