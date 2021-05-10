@@ -2,7 +2,7 @@
 ### Made by Tristan Martinuson
 
 ## Description
-This image repository uses Flask/SQLAlchemy/HTML/Javascript for the stack.
+This image repository uses Flask/SQLAlchemy/HTML for the stack.
 
 
 
